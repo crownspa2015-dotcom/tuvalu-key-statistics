@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Tuvalu — Key Statistics</title>
+
+<style>
+:root{
+  --ink:#0b1b4c;
+  --muted:#60708e;
+  --line:#dce7f2;
+  --card:#ffffff;
+  --social:#eaf4ff;
+  --economic:#e9f5ff;
+  --env:#e8f8f5;
+  --blue:#0d6fe8;
+  --blue2:#67b8f5;
+  --green:#18a48f;
+  --green2:#7dd8c8;
+}
+
+*{box-sizing:border-box;min-width:0}
+
+html,body{
+  margin:0;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--ink);
+  background:#ffffff;
+}
+
+.wrap{
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:16px 14px 28px;
+  overflow-x:hidden;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(250px,.7fr);
+  gap:12px;
+  align-items:stretch;
+  margin-bottom:16px;
+}
+
+.hero h1{
+  font-size:42px;
+  line-height:1.05;
+  margin:6px 0 10px;
+  color:#111f5a;
+}
+
+.hero p{
+  font-size:16px;
+  line-height:1.4;
+  margin:0;
+  color:#334a77;
+  max-width:100%;
+}
+
+.source-box{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px 16px;
+  background:#fbfdff;
+  overflow-wrap:anywhere;
+}
+
+.source-box strong{
+  display:block;
+  margin:3px 0 6px;
+}
+
+/* ---------- PILLARS ---------- */
+
+.pillar{
+  border-radius:16px;
+  padding:12px;
+  margin:16px 0;
+}
+
+.social{background:var(--social)}
+.economic{background:var(--economic)}
+.environment{background:var(--env)}
+
+.pillar-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:2px 4px 10px;
+}
+
+.badge{
+  width:54px;
+  height:54px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:24px;
+  font-weight:bold;
+  background:linear-gradient(135deg,#0878ef,#0a4da4);
+  flex:0 0 auto;
+}
+
+.environment .badge{
+  background:linear-gradient(135deg,#16a995,#087565);
+}
+
+.pillar-head h2{
+  font-size:26px;
+  margin:0;
+  white-space:nowrap;
+}
+
+.tag{
+  font-size:13px;
+  color:#335987;
+}
+
+.strap{
+  margin-left:auto;
+  font-size:13px;
+  color:#315a88;
+  text-align:right;
+  max-width:40%;
+}
+
+/* ---------- FLEXIBLE CARD GRID ---------- */
+/* No forced 5-card layout. Cards expand naturally based on available width. */
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(205px,1fr));
+  gap:9px;
+  width:100%;
+}
+
+.card{
+  background:#fff;
+  border:1px solid rgba(14,76,145,.08);
+  border-radius:11px;
+  min-height:124px;
+  padding:12px;
+  overflow:hidden;
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  box-shadow:0 1px 0 rgba(10,36,95,.03);
+}
+
+.icon{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#e8f3ff;
+  font-size:21px;
+  flex:0 0 auto;
+}
+
+.environment .icon{
+  background:#dff3ee;
+}
+
+.card > div:last-child{
+  flex:1 1 auto;
+}
+
+.label{
+  font-size:12.5px;
+  font-weight:700;
+  line-height:1.22;
+  margin-bottom:5px;
+  overflow-wrap:anywhere;
+}
+
+.value{
+  font-size:24px;
+  font-weight:800;
+  line-height:1.05;
+  color:#0c1b57;
+  overflow-wrap:anywhere;
+}
+
+.period{
+  font-size:12px;
+  color:var(--muted);
+  margin-top:6px;
+  line-height:1.25;
+}
+
+.card-source{
+  font-size:10.5px;
+  margin-top:7px;
+  line-height:1.25;
+}
+
+.card-source a{
+  color:#3d6592;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+
+.card-source a:hover{
+  color:#0d6fe8;
+}
+
+/* ---------- STORY VISUALS ---------- */
+
+.visual-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:10px;
+  margin-top:10px;
+  width:100%;
+}
+
+.chart-card,
+.story-card{
+  background:#fff;
+  border:1px solid rgba(14,76,145,.08);
+  border-radius:11px;
+  padding:14px;
+  overflow:hidden;
+}
+
+.chart-card h3,
+.story-card h3{
+  margin:0 0 4px;
+  font-size:19px;
+}
+
+.chart-sub{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:12px;
+  line-height:1.35;
+}
+
+.chart-source{
+  margin-top:10px;
+  font-size:11px;
+}
+
+.chart-source a{
+  color:#3d6592;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+
+/* ---------- DONUT ---------- */
+
+.donut-wrap{
+  display:grid;
+  grid-template-columns:180px 1fr;
+  gap:22px;
+  align-items:center;
+  min-height:220px;
+}
+
+.donut{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  position:relative;
+  margin:auto;
+  box-shadow:inset 0 0 0 1px rgba(11,27,76,.06);
+}
+
+.donut::after{
+  content:"";
+  position:absolute;
+  inset:32px;
+  background:#fff;
+  border-radius:50%;
+}
+
+.donut-center{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:2;
+  text-align:center;
+  font-size:12px;
+  font-weight:700;
+  color:#233d70;
+  pointer-events:none;
+  padding:52px;
+}
+
+.legend{
+  display:grid;
+  gap:10px;
+}
+
+.legend-row{
+  display:grid;
+  grid-template-columns:14px 1fr auto;
+  gap:8px;
+  align-items:center;
+  font-size:13px;
+}
+
+.swatch{
+  width:12px;
+  height:12px;
+  border-radius:3px;
+}
+
+.legend-label{
+  color:#425a7c;
+}
+
+.legend-value{
+  font-weight:800;
+  color:#0c1b57;
+}
+
+/* ---------- SOCIAL SNAPSHOT ---------- */
+
+.note{
+  background:rgba(255,255,255,.74);
+  border-radius:11px;
+  padding:16px;
+  font-size:14px;
+  line-height:1.45;
+  color:#365270;
+}
+
+.snapshot-lines{
+  display:grid;
+  gap:12px;
+  margin-top:12px;
+}
+
+.snapshot-line{
+  padding-bottom:10px;
+  border-bottom:1px solid #e8eef5;
+}
+
+.snapshot-line:last-child{
+  border-bottom:0;
+  padding-bottom:0;
+}
+
+.snapshot-line strong{
+  color:#132c63;
+}
+
+/* ---------- ENVIRONMENT HERO COMPARISON ---------- */
+
+.ocean-comparison{
+  margin-top:10px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:10px;
+}
+
+.compare-card{
+  background:#fff;
+  border:1px solid rgba(14,76,145,.08);
+  border-radius:11px;
+  padding:18px;
+  text-align:center;
+}
+
+.compare-card .compare-label{
+  font-size:12px;
+  font-weight:700;
+  color:#3f6283;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+
+.compare-card .compare-value{
+  font-size:34px;
+  line-height:1;
+  font-weight:800;
+  color:#0c1b57;
+  margin:8px 0 5px;
+}
+
+.compare-card .compare-note{
+  font-size:12px;
+  color:var(--muted);
+}
+
+.compare-story{
+  grid-column:1 / -1;
+  background:rgba(255,255,255,.74);
+  border-radius:11px;
+  padding:14px 16px;
+  color:#365270;
+  font-size:14px;
+  line-height:1.45;
+}
+
+
+/* ---------- LINE CHARTS ---------- */
+
+.line-chart{
+  position:relative;
+  height:250px;
+  margin-top:8px;
+  padding:12px 8px 34px 42px;
+  border-left:1px solid #dbe5ef;
+  border-bottom:1px solid #dbe5ef;
+}
+
+.line-chart svg{
+  width:100%;
+  height:100%;
+  overflow:visible;
+}
+
+.line-chart .grid{
+  stroke:#e8eef5;
+  stroke-width:1;
+}
+
+.line-chart .zero{
+  stroke:#aebed0;
+  stroke-width:1.3;
+}
+
+.line-chart .path{
+  fill:none;
+  stroke:#0d6fe8;
+  stroke-width:3;
+  stroke-linejoin:round;
+  stroke-linecap:round;
+}
+
+.line-chart .dot{
+  fill:#ffffff;
+  stroke:#0d6fe8;
+  stroke-width:2;
+}
+
+.line-axis-label{
+  font-size:10px;
+  fill:#667892;
+}
+
+.line-y-label{
+  position:absolute;
+  left:0;
+  font-size:10px;
+  color:#667892;
+}
+
+.line-x-labels{
+  display:grid;
+  gap:0;
+  margin:6px 0 0 42px;
+  color:#667892;
+  font-size:9px;
+}
+
+.line-x-labels span{
+  text-align:center;
+  white-space:nowrap;
+  transform:rotate(-35deg);
+  transform-origin:top center;
+}
+
+@media(max-width:760px){
+  .line-chart{
+    height:220px;
+  }
+  .line-x-labels{
+    font-size:8px;
+  }
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.sources{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:flex-start;
+  padding:16px 4px 0;
+  font-size:13px;
+  color:#4e6380;
+  line-height:1.45;
+}
+
+.error{
+  padding:20px;
+  border:1px solid #e0a5a5;
+  background:#fff6f6;
+  border-radius:10px;
+  color:#7b1e1e;
+}
+
+/* ---------- EMBED SAFETY ---------- */
+
+html, body, #app, .wrap, .hero, .pillar, .pillar-head,
+.cards, .card, .visual-grid, .chart-card, .story-card,
+.source-box, .sources, .ocean-comparison {
+  max-width:100% !important;
+  min-width:0 !important;
+}
+
+img,svg,canvas{
+  max-width:100% !important;
+}
+
+.source-box,.sources,.tag,.strap,.label,.period{
+  overflow-wrap:anywhere;
+}
+
+body{
+  overflow-x:hidden !important;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:1000px){
+  .cards{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .visual-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:760px){
+  .hero{
+    grid-template-columns:1fr;
+  }
+  .pillar-head{
+    align-items:flex-start;
+    flex-wrap:wrap;
+  }
+  .strap{
+    margin-left:64px;
+    text-align:left;
+    width:100%;
+    max-width:none;
+  }
+  .donut-wrap{
+    grid-template-columns:1fr;
+  }
+  .ocean-comparison{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:560px){
+  .wrap{
+    padding:14px 10px;
+  }
+  .hero h1{
+    font-size:34px;
+  }
+  .cards{
+    grid-template-columns:1fr;
+  }
+  .value{
+    font-size:27px;
+  }
+  .pillar-head h2{
+    font-size:23px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div id="app" class="wrap">Loading…</div>
+
+<script>
+const DATA_URL = new URLSearchParams(location.search).get("data") || "data.json";
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, m => ({
+  '&':'&amp;',
+  '<':'&lt;',
+  '>':'&gt;',
+  '"':'&quot;',
+  "'":'&#39;'
+}[m]));
+
+function cards(items){
+  return `
+    <div class="cards">
+      ${items.map(x => `
+        <div class="card">
+          <div class="icon">${esc(x.icon)}</div>
+          <div>
+            <div class="label">${esc(x.label)}</div>
+            <div class="value">${esc(x.value)}</div>
+            <div class="period">${esc(x.period)}</div>
+            ${x.source ? `
+              <div class="card-source">
+                Source:
+                ${x.sourceUrl
+                  ? `<a href="${esc(x.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(x.source)}</a>`
+                  : esc(x.source)}
+              </div>`
+            : ""}
+          </div>
+        </div>
+      `).join("")}
+    </div>`;
+}
+
+function donutChart({title, subtitle, series, sourceUrl, sourceLabel, centerText=""}){
+  const total = series.reduce((sum,d) => sum + Number(d.value || 0), 0) || 1;
+
+  const colors = ["#0d6fe8","#6dbaf4","#18a48f","#7dd8c8","#f1b84b","#7a88a8"];
+  let cursor = 0;
+
+  const stops = series.map((d,i) => {
+    const start = cursor;
+    const pct = Number(d.value || 0) / total * 100;
+    cursor += pct;
+    return `${colors[i % colors.length]} ${start.toFixed(3)}% ${cursor.toFixed(3)}%`;
+  }).join(",");
+
+  const legend = series.map((d,i) => {
+    const pct = Number(d.value || 0) / total * 100;
+    return `
+      <div class="legend-row">
+        <span class="swatch" style="background:${colors[i % colors.length]}"></span>
+        <span class="legend-label">${esc(d.label)}</span>
+        <span class="legend-value">${esc(d.display ?? d.value)}${String(d.display ?? "").includes("%") ? "" : ` · ${pct.toFixed(1)}%`}</span>
+      </div>`;
+  }).join("");
+
+  return `
+    <div class="chart-card">
+      <h3>${esc(title)}</h3>
+      <div class="chart-sub">${esc(subtitle)}</div>
+
+      <div class="donut-wrap">
+        <div style="position:relative;width:170px;height:170px;margin:auto">
+          <div class="donut" style="background:conic-gradient(${stops})"></div>
+          <div class="donut-center">${esc(centerText)}</div>
+        </div>
+        <div class="legend">${legend}</div>
+      </div>
+
+      ${sourceUrl ? `
+        <div class="chart-source">
+          Source:
+          <a href="${esc(sourceUrl)}" target="_blank" rel="noopener noreferrer">
+            ${esc(sourceLabel || "Official source")}
+          </a>
+        </div>` : ""}
+    </div>`;
+}
+
+
+function lineChart({title, subtitle, series, sourceUrl, sourceLabel, suffix=""}){
+  const values = series.map(d => Number(d.value));
+  const minV = Math.min(...values, 0);
+  const maxV = Math.max(...values, 0);
+  const pad = (maxV - minV || 1) * 0.12;
+  const lo = minV - pad;
+  const hi = maxV + pad;
+  const W = 1000, H = 210;
+
+  const x = i => series.length === 1 ? W/2 : (i/(series.length-1))*W;
+  const y = v => H - ((v-lo)/(hi-lo))*H;
+
+  const pts = series.map((d,i) => `${x(i)},${y(Number(d.value))}`).join(" ");
+  const zeroY = (lo <= 0 && hi >= 0) ? y(0) : null;
+
+  const gridVals = [0,1,2,3,4].map(i => lo + (hi-lo)*(i/4));
+
+  return `
+    <div class="chart-card">
+      <h3>${esc(title)}</h3>
+      <div class="chart-sub">${esc(subtitle)}</div>
+
+      <div class="line-chart">
+        ${gridVals.map((gv,idx) => {
+          const top = 12 + (4-idx) * (250-46)/4;
+          return `<div class="line-y-label" style="top:${top}px">${gv.toFixed(1)}${esc(suffix)}</div>`;
+        }).join("")}
+
+        <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-label="${esc(title)}">
+          ${gridVals.map(gv => `<line class="grid" x1="0" x2="${W}" y1="${y(gv)}" y2="${y(gv)}"></line>`).join("")}
+          ${zeroY !== null ? `<line class="zero" x1="0" x2="${W}" y1="${zeroY}" y2="${zeroY}"></line>` : ""}
+          <polyline class="path" points="${pts}"></polyline>
+          ${series.map((d,i) => `<circle class="dot" cx="${x(i)}" cy="${y(Number(d.value))}" r="4"><title>${esc(d.label)}: ${esc(d.value)}${esc(suffix)}</title></circle>`).join("")}
+        </svg>
+      </div>
+
+      <div class="line-x-labels" style="grid-template-columns:repeat(${series.length},1fr)">
+        ${series.map(d => `<span>${esc(d.label)}</span>`).join("")}
+      </div>
+
+      <div class="chart-source">
+        Source:
+        <a href="${esc(sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(sourceLabel)}</a>
+      </div>
+    </div>`;
+}
+
+
+function snapshotCard(snapshot){
+  return `
+    <div class="story-card">
+      <h3>${esc(snapshot.title)}</h3>
+      <div class="chart-sub">${esc(snapshot.subtitle)}</div>
+      <div class="note">
+        <div class="snapshot-lines">
+          ${snapshot.lines.map(x => `
+            <div class="snapshot-line">
+              <strong>${esc(x.head)}</strong> ${esc(x.text)}
+            </div>`).join("")}
+        </div>
+      </div>
+    </div>`;
+}
+
+function pillar(cls,title,tag,strap,content){
+  return `
+    <section class="pillar ${cls}">
+      <div class="pillar-head">
+        <div class="badge">${cls === "environment" ? "❧" : "▥"}</div>
+        <h2>${esc(title)}</h2>
+        <div class="tag">${esc(tag)}</div>
+        <div class="strap">${esc(strap)}</div>
+      </div>
+      ${content}
+    </section>`;
+}
+
+function environmentComparison(d){
+  const land = d.environment.cards.find(x => x.label === "Land area");
+  const eez = d.environment.cards.find(x => x.label === "Exclusive Economic Zone");
+
+  if(!land || !eez) return "";
+
+  return `
+    <div class="ocean-comparison">
+      <div class="compare-card">
+        <div class="compare-label">Land area</div>
+        <div class="compare-value">${esc(land.value)}</div>
+        <div class="compare-note">${esc(land.period)}</div>
+        <div class="card-source">
+          Source:
+          <a href="${esc(land.sourceUrl)}" target="_blank" rel="noopener noreferrer">
+            ${esc(land.source)}
+          </a>
+        </div>
+      </div>
+
+      <div class="compare-card">
+        <div class="compare-label">Exclusive Economic Zone</div>
+        <div class="compare-value">${esc(eez.value)}</div>
+        <div class="compare-note">${esc(eez.period)}</div>
+        <div class="card-source">
+          Source:
+          <a href="${esc(eez.sourceUrl)}" target="_blank" rel="noopener noreferrer">
+            ${esc(eez.source)}
+          </a>
+        </div>
+      </div>
+
+      <div class="compare-story">
+        Tuvalu has a very small land area but a vast ocean territory. This contrast is central to understanding the country’s geography, economy and environmental vulnerability.
+      </div>
+    </div>`;
+}
+
+async function load(){
+  try{
+    const res = await fetch(DATA_URL,{cache:"no-store"});
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const d = await res.json();
+
+    const socialSource = d.social.cards[0];
+    const socialVisuals = `
+      <div class="visual-grid">
+        ${donutChart({
+          title:d.social.chart.title,
+          subtitle:d.social.chart.subtitle,
+          series:d.social.chart.series,
+          sourceUrl:socialSource.sourceUrl,
+          sourceLabel:socialSource.source,
+          centerText:"Population"
+        })}
+        ${snapshotCard(d.social.snapshot)}
+      </div>`;
+
+    const gdpChart = d.economic.charts.find(x => /structure of real gdp/i.test(x.title)) || d.economic.charts[d.economic.charts.length - 1];
+    const gdpSource = d.economic.cards.find(x => /services share/i.test(x.label)) || d.economic.cards[0];
+
+    const economicVisuals = `
+      <div class="visual-grid">
+        ${donutChart({
+          title:gdpChart.title,
+          subtitle:gdpChart.subtitle,
+          series:gdpChart.series,
+          sourceUrl:gdpSource.sourceUrl,
+          sourceLabel:gdpSource.source,
+          centerText:"Real GDP"
+        })}
+
+        ${lineChart({
+          title:d.economic.inflationChart.title,
+          subtitle:d.economic.inflationChart.subtitle,
+          series:d.economic.inflationChart.series,
+          sourceUrl:d.economic.inflationChart.sourceUrl,
+          sourceLabel:d.economic.inflationChart.source,
+          suffix:"%"
+        })}
+
+        ${lineChart({
+          title:d.economic.debtChart.title,
+          subtitle:d.economic.debtChart.subtitle,
+          series:d.economic.debtChart.series,
+          sourceUrl:d.economic.debtChart.sourceUrl,
+          sourceLabel:d.economic.debtChart.source,
+          suffix:"m"
+        })}
+
+        <div class="story-card">
+          <h3>Economic snapshot</h3>
+          <div class="chart-sub">Why these indicators matter</div>
+          <div class="note">
+            Tuvalu’s economy is dominated by services, while merchandise trade remains in deficit and imports are concentrated among a small number of external partners. Inflation has moved sharply over recent years, while Central Government external debt has steadily declined.
+          </div>
+        </div>
+      </div>`;
+
+    const environmentCards = d.environment.cards.filter(
+      x => !["Land area","Exclusive Economic Zone"].includes(x.label)
+    );
+
+    document.getElementById("app").innerHTML = `
+      <div class="hero">
+        <div>
+          <h1>${esc(d.meta.title)}</h1>
+          <p>${esc(d.meta.subtitle)}</p>
+        </div>
+
+        <div class="source-box">
+          <span>Official source network</span>
+          <strong>${esc(d.meta.governmentLabel || "Government of Tuvalu")}</strong>
+          <div>${d.sources.map(esc).join(" · ")}</div>
+        </div>
+      </div>
+
+      ${pillar(
+        "social",
+        "SOCIAL",
+        d.social.tag,
+        d.social.strap,
+        cards(d.social.cards) + socialVisuals
+      )}
+
+      ${pillar(
+        "economic",
+        "ECONOMIC",
+        d.economic.tag,
+        d.economic.strap,
+        cards(d.economic.cards) + economicVisuals
+      )}
+
+      ${pillar(
+        "environment",
+        "ENVIRONMENTAL",
+        d.environment.tag,
+        d.environment.strap,
+        environmentComparison(d) +
+        `<div style="margin-top:10px">${cards(environmentCards)}</div>` +
+        `<div class="note" style="margin-top:10px">${esc(d.environment.note)}</div>`
+      )}
+
+      <div class="sources">
+        <div>
+          <strong>Official sources:</strong>
+          ${d.sources.map(esc).join("; ")}
+        </div>
+        <div>
+          <strong>Data file updated:</strong>
+          ${esc(d.meta.lastUpdated)}
+        </div>
+      </div>`;
+  }
+  catch(err){
+    document.getElementById("app").innerHTML = `
+      <div class="error">
+        <strong>Could not load data.</strong><br>
+        ${esc(err.message)}<br><br>
+        Make sure this file and <strong>data.json</strong> are hosted in the same GitHub Pages folder.
+      </div>`;
+  }
+}
+
+load();
+</script>
+</body>
+</html>
