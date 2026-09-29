@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "title": "Tuvalu — Key Statistics",
+    "subtitle": "Verified statistics at a glance — showing Tuvalu’s social, economic and environmental characteristics as a small island developing state.",
+    "governmentLabel": "Government of Tuvalu",
+    "lastUpdated": "29 September 2026"
+  },
+  "sources": [
+    "Tuvalu Central Statistics Division",
+    "Government of Tuvalu — Ministry of Finance",
+    "Tuvalu Fisheries Authority",
+    "Government of Tuvalu — State of Environment Report 2022"
+  ],
+  "social": {
+    "tag": "People and communities in Tuvalu",
+    "strap": "A very small population, concentrated in Funafuti, with important household vulnerability.",
+    "cards": [
+      {
+        "icon": "👥",
+        "label": "Resident population",
+        "value": "10,632",
+        "period": "2022–23 Population and Housing Census",
+        "source": "Tuvalu Central Statistics Division — 2022–23 Census",
+        "sourceUrl": "https://stats.gov.tv/news/tuvalu-population-and-housing-census-2022-23/"
+      },
+      {
+        "icon": "📍",
+        "label": "Population in Funafuti",
+        "value": "62.1%",
+        "period": "6,602 of 10,632 residents · 2022–23",
+        "source": "Tuvalu Central Statistics Division — 2022–23 Census",
+        "sourceUrl": "https://stats.gov.tv/news/tuvalu-population-and-housing-census-2022-23/"
+      },
+      {
+        "icon": "⌂",
+        "label": "Basic-needs hardship",
+        "value": "21.5%",
+        "period": "Basic Needs Poverty Rate · HIES 2022–23",
+        "source": "Tuvalu Central Statistics Division — Hardship in Tuvalu 2022–23",
+        "sourceUrl": "https://stats.gov.tv/news/hardship-in-tuvalu-2022-23/"
+      },
+      {
+        "icon": "🍽",
+        "label": "Food share of consumption",
+        "value": "34%",
+        "period": "Food & non-alcoholic beverages · HIES 2022–23",
+        "source": "Tuvalu Central Statistics Division — HIES 2022–23",
+        "sourceUrl": "https://stats.gov.tv/category/census-and-surveys/hies/"
+      },
+      {
+        "icon": "⚖",
+        "label": "Gini index",
+        "value": "0.294",
+        "period": "2022–23 · relatively low income inequality",
+        "source": "Tuvalu Central Statistics Division — Hardship in Tuvalu 2022–23",
+        "sourceUrl": "https://stats.gov.tv/news/hardship-in-tuvalu-2022-23/",
+        "meaning": "A lower Gini value indicates a more even distribution of income."
+      }
+    ],
+    "chart": {
+      "title": "Where Tuvalu’s population lives",
+      "subtitle": "Resident population · 2022–23 Census · Source: Tuvalu Central Statistics Division",
+      "series": [
+        {
+          "label": "Funafuti",
+          "value": 6602,
+          "display": "6,602"
+        },
+        {
+          "label": "Outer islands",
+          "value": 4030,
+          "display": "4,030"
+        }
+      ]
+    },
+    "snapshot": {
+      "title": "Social snapshot",
+      "subtitle": "A small population with strong concentration in the capital and household vulnerability.",
+      "lines": [
+        {
+          "head": "10,632 residents",
+          "text": "were recorded in the 2022–23 Population and Housing Census."
+        },
+        {
+          "head": "62.1%",
+          "text": "of residents lived in Funafuti, while 4,030 lived across the outer islands."
+        },
+        {
+          "head": "21.5%",
+          "text": "was the basic-needs hardship rate in the 2022–23 HIES."
+        },
+        {
+          "head": "34%",
+          "text": "of household consumption expenditure went to food and non-alcoholic beverages."
+        }
+      ]
+    }
+  },
+  "economic": {
+    "tag": "A small and externally connected island economy",
+    "strap": "Growth alongside a narrow services base, import dependence and a persistent trade deficit.",
+    "cards": [
+      {
+        "icon": "↗",
+        "label": "Real GDP growth",
+        "value": "5.2%",
+        "period": "2025 · constant 2023 prices",
+        "source": "Tuvalu Central Statistics Division — GDP 2025",
+        "sourceUrl": "https://stats.gov.tv/news/tuvalu-gross-domestic-product-2025/"
+      },
+      {
+        "icon": "▤",
+        "label": "Services share of real GDP",
+        "value": "77.3%",
+        "period": "2025",
+        "source": "Tuvalu Central Statistics Division — GDP 2025",
+        "sourceUrl": "https://stats.gov.tv/news/tuvalu-gross-domestic-product-2025/"
+      },
+      {
+        "icon": "⇄",
+        "label": "Merchandise trade deficit",
+        "value": "A$1.90m",
+        "period": "June 2025",
+        "source": "Tuvalu Central Statistics Division — IMTS",
+        "sourceUrl": "https://stats.gov.tv/news/international-merchandise-trade-statistics-imts/"
+      },
+      {
+        "icon": "🌏",
+        "label": "Imports from top 3 partners",
+        "value": "62%",
+        "period": "Australia 30% · Fiji 28% · New Zealand 4% · Jul 2024–Jun 2025",
+        "source": "Tuvalu Central Statistics Division — IMTS",
+        "sourceUrl": "https://stats.gov.tv/news/international-merchandise-trade-statistics-imts/"
+      },
+      {
+        "icon": "▣",
+        "label": "External public debt",
+        "value": "A$3.58m",
+        "period": "2024–25 · down 34% since 2020–21",
+        "source": "Ministry of Finance and Economic Development — Annual Debt Statistical Bulletin 2025",
+        "sourceUrl": "https://finance.gov.tv/wp-content/uploads/2025/09/Bulletin-V5.pdf"
+      },
+      {
+        "icon": "🐟",
+        "label": "Fishing licence revenue",
+        "value": "A$41.73m",
+        "period": "37% of total government revenue · 2025–26 Budget",
+        "source": "Government of Tuvalu — Citizen Budget Guide 2025–26",
+        "sourceUrl": "https://finance.gov.tv/wp-content/uploads/2025/08/Eng-Vers-Tuvalu-Citizen-Budget-Guide_2025-2026.pdf",
+        "meaning": "A major source of government revenue, showing the importance of Tuvalu’s ocean resources."
+      }
+    ],
+    "charts": [
+      {
+        "title": "Public external debt trend",
+        "subtitle": "A$ million · Source: Government of Tuvalu, National Budget 2025–26",
+        "series": [
+          {
+            "label": "2022",
+            "value": 4.9,
+            "display": "A$4.90m"
+          },
+          {
+            "label": "2023",
+            "value": 4.4,
+            "display": "A$4.40m"
+          },
+          {
+            "label": "2024–25",
+            "value": 3.59,
+            "display": "A$3.59m"
+          }
+        ]
+      },
+      {
+        "title": "Structure of real GDP",
+        "subtitle": "Share of real GDP · 2025 · Source: Tuvalu Central Statistics Division",
+        "series": [
+          {
+            "label": "Services",
+            "value": 77.3,
+            "display": "77.3%"
+          },
+          {
+            "label": "Industry",
+            "value": 11.5,
+            "display": "11.5%"
+          },
+          {
+            "label": "Primary",
+            "value": 6.0,
+            "display": "6.0%"
+          },
+          {
+            "label": "Net taxes",
+            "value": 5.2,
+            "display": "5.2%"
+          }
+        ]
+      }
+    ],
+    "inflationChart": {
+      "title": "Annual inflation",
+      "subtitle": "Quarterly annual inflation rate · Sep 2022–Jun 2026",
+      "source": "Tuvalu Central Statistics Division — Consumer Price Index",
+      "sourceUrl": "https://stats.gov.tv/category/economics/consumer-price-index/",
+      "series": [
+        {
+          "label": "Sep 2022",
+          "value": 14.2
+        },
+        {
+          "label": "Dec 2022",
+          "value": 13.7
+        },
+        {
+          "label": "Mar 2023",
+          "value": 12.2
+        },
+        {
+          "label": "Jun 2023",
+          "value": 6.0
+        },
+        {
+          "label": "Sep 2023",
+          "value": 6.2
+        },
+        {
+          "label": "Dec 2023",
+          "value": 3.5
+        },
+        {
+          "label": "Mar 2024",
+          "value": 3.1
+        },
+        {
+          "label": "Jun 2024",
+          "value": 2.2
+        },
+        {
+          "label": "Sep 2024",
+          "value": -2.0
+        },
+        {
+          "label": "Dec 2024",
+          "value": -1.8
+        },
+        {
+          "label": "Mar 2025",
+          "value": 1.2
+        },
+        {
+          "label": "Jun 2025",
+          "value": 1.1
+        },
+        {
+          "label": "Sep 2025",
+          "value": 3.7
+        },
+        {
+          "label": "Dec 2025",
+          "value": 5.3
+        },
+        {
+          "label": "Mar 2026",
+          "value": 1.8
+        },
+        {
+          "label": "Jun 2026",
+          "value": 3.7
+        }
+      ]
+    },
+    "debtChart": {
+      "title": "External debt trend",
+      "subtitle": "Central Government external debt · A$ million",
+      "source": "Ministry of Finance and Economic Development — Annual Debt Statistical Bulletin, August 2025",
+      "sourceUrl": "https://finance.gov.tv/wp-content/uploads/2025/09/Bulletin-V5.pdf",
+      "series": [
+        {
+          "label": "2020/21",
+          "value": 5.45
+        },
+        {
+          "label": "2021/22",
+          "value": 4.99
+        },
+        {
+          "label": "2022/23",
+          "value": 4.52
+        },
+        {
+          "label": "2023/24",
+          "value": 4.05
+        },
+        {
+          "label": "2024/25",
+          "value": 3.58
+        }
+      ]
+    }
+  },
+  "environment": {
+    "tag": "A low-lying, ocean-dominated island state",
+    "strap": "Very little land, a vast ocean territory and direct exposure to climate hazards.",
+    "cards": [
+      {
+        "icon": "🏝",
+        "label": "Land area",
+        "value": "26 km²",
+        "period": "Nine islands and atolls",
+        "source": "Tuvalu Fisheries Authority — Annual Report 2024",
+        "sourceUrl": "https://tuvalufisheries.tv/wp-content/uploads/2025/07/TFD-Annual-Report-2024.pdf"
+      },
+      {
+        "icon": "🌊",
+        "label": "Exclusive Economic Zone",
+        "value": "750,000 km²",
+        "period": "Ocean territory",
+        "source": "Tuvalu Fisheries Authority — Annual Report 2024",
+        "sourceUrl": "https://tuvalufisheries.tv/wp-content/uploads/2025/07/TFD-Annual-Report-2024.pdf"
+      },
+      {
+        "icon": "↟",
+        "label": "Sea-level rise at Funafuti",
+        "value": "3.9 mm/yr",
+        "period": "Average over the preceding ~40 years reported in SOE 2022",
+        "source": "Government of Tuvalu — State of Environment Report 2022",
+        "sourceUrl": "https://tuvalu-data.sprep.org/system/files/211110-Tuvalu-State-of-Environment-report%20Final%20Interactive.pdf"
+      },
+      {
+        "icon": "🌀",
+        "label": "Tropical cyclone exposure",
+        "value": "33",
+        "period": "Cyclones within 400 km of Funafuti · 1969–2007",
+        "source": "Government of Tuvalu — State of Environment Report 2022",
+        "sourceUrl": "https://tuvalu-data.sprep.org/system/files/211110-Tuvalu-State-of-Environment-report%20Final%20Interactive.pdf"
+      }
+    ],
+    "note": "Environment at a glance: Tuvalu has only 26 km² of land but an approximately 750,000 km² Exclusive Economic Zone. The State of Environment Report records average sea-level rise at Funafuti of 3.9 mm per year over about 40 years and 33 tropical cyclones passing within 400 km of Funafuti between 1969 and 2007."
+  }
+}
